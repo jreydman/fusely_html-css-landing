@@ -1,0 +1,14 @@
+include mixins
+div.header__nav
+    div.nav__content
+        img.header__logo(src="/assets/images/app-logo.png" alt="Navbar logo")
+        input#hamburger-checker(type="checkbox")
+        label.hamburger-icon(for="hamburger-checker")
+        nav.menu-section-clickup
+            a.menu__navigator(href="#hero-banner") Home
+            a.menu__navigator(href="#feature-banner") Features
+            a.menu__navigator(href="#price-banner") Pricing
+            a.menu__navigator(href="#contact-banner") Contact
+        nav.menu-section-auth
+            a.menu__navigator(href="#") Log in
+            +primary-link("Get Started").menu__navigator

@@ -1,0 +1,17 @@
+include mixins
+section.price__banner#price-banner
+    +price-card(
+        "Starter",
+        {cost : "Free",inverval:""},
+        ["Dashboard", "Limited Support", 'Forever free']
+    )
+    +price-card(
+        "Premium",
+        {cost : "$29", interval : "month"},
+        ["Dashboard & Analysis", "Premium Support", "Tracking Service"]
+    )
+    +price-card(
+        "Enterprise",
+        {cost : "$49", interval : "month"},
+        ["All features in <em class='text--accent'>Premium</em>", "Realtime overview", "Mobile app"]
+    )

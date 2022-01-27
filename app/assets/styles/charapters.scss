@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$font-family-primary: 'Open Sans', sans-serif;
+$font-family-secondary: 'Playfair Display',serif;
+
+$font-weight-header: 700;
+$font-weight-form: 400;
+$font-weight-footer: 600;
+$font-size-default: 10px;
+
+$device_sizes: ('md':828px,'sm': 450px);
+
+
+
+$app-color-primary: #6C63FF;
+$app-color-primary-alt: #C5C2FF;
+$app-color-paragraph-alt: #717082;
+$app-color-paragraph: #9893A3;
+$app-color-header: #2F2E41;
+$app-color-background: #FFFFFF;
+$footer-color-background: #ECEBFF;
+$app-color-warning: #FC4A6E;
+$card-color-background: rgba(236, 235, 255, 0.3);
+
+$transition-time-hover: 0.1s;
+
+$vertical-transparency : 4rem;
+$horizontal-transparency: 4rem;
+
+$imposition-size: 20rem;
+
+$header-z-foreground: 51;
+$header-z-background: 50;
+$body-z-background: -2;
+$footer-z-background: -1;

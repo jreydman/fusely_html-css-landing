@@ -1,0 +1,95 @@
+@use "sass:selector";
+@use "sass:list";
+@import "charapters";
+
+@mixin bp-loader($size) {
+  @media screen and (max-width: map-get($device_sizes,$size)) {
+    @content;
+  }
+}
+
+@mixin unify-parent($child) {
+  @at-root #{selector.unify(&, $child)} {
+    @content;
+  }
+}
+
+@mixin hide {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@mixin link {
+  color: $app-color-header;
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 -1rem 0 0 $app-color-primary-alt inset;
+  -webkit-box-shadow: 0 -1rem 0 0 $app-color-primary-alt inset;
+  -moz-box-shadow: 0 -1rem 0 0 $app-color-primary-alt inset;
+}
+
+@mixin style-primary {
+  color: $app-color-background;
+  border-radius: 0.3rem;
+  background-color: $app-color-primary;
+  padding: 1.5rem 2rem;
+  transition: $transition-time-hover  all ease-in-out;
+}
+
+@mixin style-whited {
+  color: $app-color-paragraph-alt;
+  background-color: white;
+  &:hover {
+    color: $app-color-header;
+    border-bottom:0.2rem solid $app-color-primary;
+  }
+}
+
+@mixin style-outlined-alt {
+  color: $app-color-primary;
+  border: 0.3rem solid $app-color-primary-alt;
+  transition: $transition-time-hover  all ease-in-out;
+  background-color: $card-color-background;
+}
+
+@mixin style-outlined {
+  color: $app-color-primary;
+  border: 0.1rem solid $app-color-primary;
+  border-radius: 0.3rem;
+  padding: 1.5rem 3rem;
+  background-color: $app-color-background;
+  transition: $transition-time-hover all ease-in-out;
+  &:hover {
+    background-color: $app-color-primary;
+    color: $app-color-background;
+  }
+}
+
+@mixin font-family-primary {
+  font-family: $font-family-primary;
+}
+
+@mixin text-size-lbl1 {
+  font-size: 2rem;
+}
+
+@mixin text-size-lbl2 {
+  font-size: 1.8rem;
+}
+
+@mixin text-size-lvl3 {
+  font-size: 1.6rem;
+}
+
+@mixin text-size-lvl4 {
+  font-size: 1.4rem;
+}
+
+@mixin text-size-lvl5 {
+  font-size: 1.2rem;
+}
+
+@mixin font-weight-form {
+  font-weight: $font-weight-form;
+}

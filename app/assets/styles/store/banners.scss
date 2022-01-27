@@ -1,0 +1,85 @@
+@import "../charapters";
+@import "../mixins";
+
+.banner-reverse {
+  flex-direction: row-reverse;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4rem;
+  gap: $horizontal-transparency;
+
+  .banner__info {
+    margin: auto;
+    flex-basis: 30%;
+    order: 1;
+    flex-grow: 1;
+
+    .banner__title {
+      color: $app-color-header;
+      line-height: 8.8rem;
+    }
+
+    .banner__description {
+      color: $app-color-paragraph;
+      margin: 4rem auto;
+    }
+
+  }
+
+  .banner__logo {
+    margin: $vertical-transparency 0;
+    flex-grow: 1;
+    order: 2;
+  }
+
+  @include bp-loader('sm') {
+    margin: 6rem 2rem;
+
+    .banner__info .banner__description {
+      margin: 4rem auto;
+    }
+
+  }
+}
+
+#hero .banner {
+  margin: auto 4rem;
+
+  .banner__info .banner__title {
+    line-height: 8.8rem;
+  }
+
+  @include bp-loader('md') {
+    margin: 6rem 2rem 2rem;
+  }
+
+  @include bp-loader('sm') {
+    .banner__info .banner__title {
+      line-height: 5rem;
+      font-size: 4.6rem;
+    }
+  }
+
+}
+
+#feature .banner {
+
+  .banner__info .banner__title {line-height: 6.4rem;}
+
+  @include bp-loader('md') {
+    margin: 2rem;
+  }
+
+  @include bp-loader('sm') {
+    .banner__info .banner__title {
+      line-height: 4rem;
+      font-size: 3.4rem;
+    }
+  }
+
+}

@@ -1,0 +1,12 @@
+-
+    var sponsors = [
+        {name:'binator',img:'/assets/images/binator-logo.png', alt:'binator'},
+        {name:'buyme',img:'/assets/images/buyme-logo.png', alt:'buyme'},
+        {name:'loogipsum',img:'/assets/images/loogipsum-logo.png', alt:'loogipsum'},
+        {name:'square',img:'/assets/images/square-logo.png', alt:'square'},
+        {name:'umbrella',img:'/assets/images/umbrella-logo.png', alt:'umbrella'}
+    ]
+
+section.sponsors#sponsors-banner
+    each com in sponsors
+        img.sponsor__img(src=com.img alt=com.alt)

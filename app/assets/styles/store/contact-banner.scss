@@ -1,0 +1,53 @@
+@import "../charapters";
+@import "../mixins";
+.contact__wrapper {
+  margin-bottom: (-$imposition-size);
+}
+
+.contact__banner {
+  margin: auto;
+  padding: $vertical-transparency 2rem;
+  max-width: 90rem;
+  width: 100%;
+  background-color: $app-color-header;
+  color: $app-color-background;
+  .contact__title {
+    margin: $vertical-transparency auto;
+    text-align: center;
+  }
+  .contact__form {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    .contact__profile__block {
+      display: flex;
+      flex-direction: column;
+      .form__field .field {
+        height: 5.8rem;
+      }
+    }
+    .contact__message__block .form__field .field {
+      height: 16.6rem;
+    }
+    .contact__profile__block, .contact__message__block {
+      flex-grow: 1;
+      padding: 0 2rem;
+    }
+  }
+  .form__submit {
+    display: flex;
+    margin: auto;
+    padding: 2rem 4rem;
+
+    @include style-primary();
+  }
+
+  @include bp-loader('md') {
+    .contact__title {
+      font-size: 3.4rem;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+include mixins
+div.contact__wrapper#contact-banner
+    div.contact__banner
+        h3.contact__title Interested in getting fusely?
+        form.contact__form
+            div.contact__profile__block
+                div.form__field
+                    input.field(id="contact-field-full-name" type="text" placeholder="Name" pattern="[a-zA-Z'-'\\s]*")
+                    label.field__label(for="contact-field-full-name") Name
+                    div.field__info
+                        p.field__error Error Text
+                div.form__field
+                    input.field(id="contact-field-email" type="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+                    label.field__label(for="contact-field-email") Email
+                    div.field__info
+                        p.field__error Error Text
+            div.contact__message__block
+                div.form__field
+                    textarea.field(id="contact-field-message" placeholder="Message" maxlength="400")
+                    label.field__label(for="contact-field-message") Message
+                    div.field__info
+                        p.field__counter
+                            span 0
+                            span /0
+                        p.field__error Error Text
+        button.form__submit(id="contact-submit" type="submit") Let`s talk
