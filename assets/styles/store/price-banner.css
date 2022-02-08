@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.price__banner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+}
+.price__banner .price__card {
+  width: 34rem;
+  padding: 4rem 0;
+  margin: 2rem 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+  background-color: rgba(236, 235, 255, 0.3);
+  color: #717082;
+}
+.price__banner .price__card .price__title {
+  font-size: 1.8rem;
+}
+.price__banner .price__card .register-link {
+  padding: 1rem 4rem;
+  color: #6C63FF;
+  border: 0.3rem solid #C5C2FF;
+  transition: 0.1s all ease-in-out;
+  background-color: rgba(236, 235, 255, 0.3);
+}
+.price__banner .price__card:hover {
+  margin: 0 2rem;
+  padding: 6rem 0;
+  background-color: #6C63FF;
+}
+.price__banner .price__card:hover, .price__banner .price__card:hover .price__paymount, .price__banner .price__card:hover .price__description .text--accent {
+  color: #FFFFFF;
+}
+.price__banner .price__card:hover .register-link {
+  background-color: #FFFFFF;
+  border: 0.3rem solid #6C63FF;
+}
+.price__banner .price__card .price__paymount {
+  color: #2F2E41;
+}
+.price__banner .price__card .price__paymount .price__cost {
+  display: contents;
+  align-items: baseline;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+.price__banner .price__card .price__paymount .price__cost .price__interval {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.price__banner .price__card .price__description, .price__banner .price__card .price__title {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 450px) {
+  .price__banner .price__paymount .price__cost {
+    font-size: 4rem;
+  }
+}
