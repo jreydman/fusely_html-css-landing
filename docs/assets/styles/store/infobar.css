@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.infobar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 8rem;
+  column-gap: 8rem;
+  margin: auto;
+  max-width: 90rem;
+}
+.infobar .section--row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.infobar .infobar__section {
+  margin: 2rem 0;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.infobar .infobar__link {
+  display: block;
+  margin: 1rem 0;
+  color: #717082;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.infobar .infobar__title {
+  display: block;
+  color: #2F2E41;
+  font-weight: 600;
+  flex-basis: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 828px) {
+  .infobar {
+    margin: 2rem;
+    justify-content: flex-start;
+  }
+}

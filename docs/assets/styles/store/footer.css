@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.footer {
+  display: block;
+  position: relative;
+  z-index: -1;
+  padding-top: 20rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  background-color: #ECEBFF;
+}
+.footer .footer__colontitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 120rem;
+  margin: auto;
+  padding: 0 2rem;
+}
+.footer .footer__colontitle .footer__copyright-mark {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #9893A3;
+}
+.footer .footer__colontitle .footer__logo {
+  max-width: 6rem;
+}
+@media screen and (max-width: 828px) {
+  .footer .footer__colontitle {
+    margin: 2rem auto;
+  }
+}

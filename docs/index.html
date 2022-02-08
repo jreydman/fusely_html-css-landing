@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <title>DL Landing</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <header>
+      <div class="header__nav">
+        <div class="nav__content"><img class="header__logo" src="/assets/images/app-logo.png" alt="Navbar logo">
+          <input id="hamburger-checker" type="checkbox">
+          <label class="hamburger-icon" for="hamburger-checker"></label>
+          <nav class="menu-section-clickup"><a class="menu__navigator" href="#hero-banner">Home</a><a class="menu__navigator" href="#feature-banner">Features</a><a class="menu__navigator" href="#price-banner">Pricing</a><a class="menu__navigator" href="#contact-banner">Contact</a></nav>
+          <nav class="menu-section-auth"><a class="menu__navigator" href="#">Log in</a><a class="register-link" href="#">Get Started</a>
+          </nav>
+        </div>
+      </div>
+      <section id="hero">
+              <div class="banner ">
+                <div class="banner__info">
+                  <h1 class="banner__title">Let`s get fusely together</h1>
+                  <p class="banner__description">Outcome-centered product that reduce churn, optimize pricing, and grow your subscription business end-to-end.</p><a class="register-link" href="#">Get Started</a>
+                </div>
+                <div class="banner__logo"><img src="/assets/images/hero-banner.png" alt="Banner logo"></div>
+              </div>
+      </section>
+    </header>
+    <main>
+      <section class="sponsors" id="sponsors-banner"><img class="sponsor__img" src="/assets/images/binator-logo.png" alt="binator"><img class="sponsor__img" src="/assets/images/buyme-logo.png" alt="buyme"><img class="sponsor__img" src="/assets/images/loogipsum-logo.png" alt="loogipsum"><img class="sponsor__img" src="/assets/images/square-logo.png" alt="square"><img class="sponsor__img" src="/assets/images/umbrella-logo.png" alt="umbrella">
+      </section>
+      <section id="feature">
+              <div class="banner  banner-reverse">
+                <div class="banner__info">
+                  <h2 class="banner__title">Detailed Examination</h2>
+                  <p class="banner__description">A daily dataset to keep you up to date on subscription market trends and what's happening in your vertical.</p><a class="clickbate-link" href="#">Learn more</a>
+                </div>
+                <div class="banner__logo"><img src="/assets/images/feature-banner1.png" alt="Banner logo"></div>
+              </div>
+              <div class="banner ">
+                <div class="banner__info">
+                  <h2 class="banner__title">Creative Solutions</h2>
+                  <p class="banner__description">Creativity is our second name. We're full of inventive ideas and we're happy to present them to you.</p><a class="clickbate-link" href="#">Learn more</a>
+                </div>
+                <div class="banner__logo"><img src="/assets/images/feature-banner2.png" alt="Banner logo"></div>
+              </div>
+      </section>
+      <section class="price__banner" id="price-banner">
+              <div class="price__card">
+                <p class="price__title">Starter</p>
+                <div class="price__paymount">
+                  <h3 class="price__cost">Free
+                  </h3>
+                </div>
+                <p class="price__description">Dashboard</p>
+                <p class="price__description">Limited Support</p>
+                <p class="price__description">Forever free</p><a class="register-link" href="#">Get Started</a>
+              </div>
+              <div class="price__card">
+                <p class="price__title">Premium</p>
+                <div class="price__paymount">
+                  <h3 class="price__cost">$29<span class="price__interval">/month</span>
+                  </h3>
+                </div>
+                <p class="price__description">Dashboard & Analysis</p>
+                <p class="price__description">Premium Support</p>
+                <p class="price__description">Tracking Service</p><a class="register-link" href="#">Get Started</a>
+              </div>
+              <div class="price__card">
+                <p class="price__title">Enterprise</p>
+                <div class="price__paymount">
+                  <h3 class="price__cost">$49<span class="price__interval">/month</span>
+                  </h3>
+                </div>
+                <p class="price__description">All features in <em class='text--accent'>Premium</em></p>
+                <p class="price__description">Realtime overview</p>
+                <p class="price__description">Mobile app</p><a class="register-link" href="#">Get Started</a>
+              </div>
+      </section>
+      <div class="contact__wrapper" id="contact-banner">
+        <div class="contact__banner">
+          <h3 class="contact__title">Interested in getting fusely?</h3>
+          <form class="contact__form">
+            <div class="contact__profile__block">
+              <div class="form__field">
+                <input class="field" id="contact-field-full-name" type="text" placeholder="Name" pattern="[a-zA-Z'-'\s]*">
+                <label class="field__label" for="contact-field-full-name">Name</label>
+                <div class="field__info">
+                  <p class="field__error">Error Text</p>
+                </div>
+              </div>
+              <div class="form__field">
+                <input class="field" id="contact-field-email" type="email" placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
+                <label class="field__label" for="contact-field-email">Email</label>
+                <div class="field__info">
+                  <p class="field__error">Error Text</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact__message__block">
+              <div class="form__field">
+                <textarea class="field" id="contact-field-message" placeholder="Message" maxlength="400"></textarea>
+                <label class="field__label" for="contact-field-message">Message</label>
+                <div class="field__info">
+                  <p class="field__counter"><span>0</span><span>/0</span></p>
+                  <p class="field__error">Error Text</p>
+                </div>
+              </div>
+            </div>
+          </form>
+          <button class="form__submit" id="contact-submit" type="submit">Let`s talk</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="infobar" id="infobar-banner">
+        <div class="infobar__section">
+          <p class="infobar__title">Product</p><a class="infobar__link" href="#">How it works</a><a class="infobar__link" href="#">Features</a><a class="infobar__link" href="#">Pricing</a><a class="infobar__link" href="#">FAQ</a><a class="infobar__link" href="#">Download</a>
+        </div>
+        <div class="infobar__section">
+          <p class="infobar__title">Company</p><a class="infobar__link" href="#">About</a><a class="infobar__link" href="#">Blog</a><a class="infobar__link" href="#">Partnership</a><a class="infobar__link" href="#">Terms of use</a><a class="infobar__link" href="#">Privacy policy</a>
+        </div>
+        <div class="infobar__section">
+          <p class="infobar__title">Support</p><a class="infobar__link" href="#">Help center</a><a class="infobar__link" href="#">Contact us</a>
+        </div>
+        <div class="infobar__section section--row">
+          <p class="infobar__title">Get in touch</p><a class="infobar__link" href="#"><img class="icon" src="/assets/images/facebook-icon.png" alt="facebook-icon"></a><a class="infobar__link" href="#"><img class="icon" src="/assets/images/twitter-icon.png" alt="twitter-icon"></a><a class="infobar__link" href="#"><img class="icon" src="/assets/images/linkedin-icon.png" alt="linkedin-icon"></a>
+        </div>
+      </section>
+      <div class="footer__colontitle"><img class="footer__logo" src="/assets/images/app-logo.png">
+        <p class="footer__copyright-mark">© Fusely 2021. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/assets/scripts/script.js"></script>
+  </body>
+</html>
